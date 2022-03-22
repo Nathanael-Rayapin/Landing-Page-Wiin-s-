@@ -19,12 +19,11 @@
         <!-- Button -->
         <button class="btn btn-sm text-light"
           *ngFor="let item of btnTabs">
-          <span>{{item.name}}</span>
+            <span>{{item.name}}</span>
         </button>
         <!-- Button [Externe] -->
-        <button class="btn btn-sm mx-2 me-5 text-light" [routerLink]="item.path"
-          *ngFor="let item of btnRoutes">
-          <span>{{item.name}}</span>
+        <button class="btn btn-sm mx-2 me-5 text-light" (click)="goToGitHub()">
+          <span>Github</span>
           <div class="underline mx-auto"></div>
         </button>
         <!-- Langue -->
@@ -33,7 +32,7 @@
           <span>{{defaultLang}} <i class="bi bi-arrow-down"></i></span>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item *ngFor="let item of btnLanguages; let i = index">
+          <button mat-menu-item *ngFor="let item of filteredLang ? filteredLang : btnLanguages; let i = index">
             <span (click)="onChangeLang(item.language)">{{item.language}}</span>
           </button>
         </mat-menu>
