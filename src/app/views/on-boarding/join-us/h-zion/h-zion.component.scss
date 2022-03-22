@@ -1,0 +1,91 @@
+// Zion
+.zion {
+  margin-top: 10em;
+}
+
+// Token
+.main-container {
+  position: relative;
+  background: none;
+  width: 100%;
+}
+
+.token {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  animation: tokenAnimation 1s linear infinite alternate;
+  z-index: 999;
+}
+
+@keyframes tokenAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: url(../../../../../assets/img/h-Zion/tokenFront.svg);
+  background-size: cover;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: url(../../../../../assets/img/h-Zion/tokenBack.svg);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+// Link Img
+.link {
+  position: absolute;
+  top: 0;
+  left: 6em;
+  z-index: 1;
+}
+
+// Text
+.btn-action {
+  background: linear-gradient(90deg, #ec6569, #3e009c33);
+  border-radius: 13px;
+  border: 0;
+}
+
+.descript span {
+  font-weight: 400;
+}
+
+.descript p {
+  font-size: 24px;
+}
+
+.descript button {
+  transition: all 0.3s;
+  outline: 2px solid transparent;
+}
+
+.descript button:hover {
+  outline: 2px solid #fff;
+}
