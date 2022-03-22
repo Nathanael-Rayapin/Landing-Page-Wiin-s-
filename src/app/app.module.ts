@@ -16,6 +16,15 @@ import { EffectsModule } from '@ngrx/effects';
 import { RootStoreModule } from './core/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { ALetsBuildComponent } from './views/on-boarding/join-us/a-lets-build/a-lets-build.component';
+import { BImagineEarlyAccessComponent } from './views/on-boarding/join-us/b-imagine-early-access/b-imagine-early-access.component';
+import { CNewsfeedDiscoverComponent } from './views/on-boarding/join-us/c-newsfeed-discover/c-newsfeed-discover.component';
+import { DMessengerComponent } from './views/on-boarding/join-us/d-messenger/d-messenger.component';
+import { EProfileComponent } from './views/on-boarding/join-us/e-profile/e-profile.component';
+import { FMusicVideoComponent } from './views/on-boarding/join-us/f-music-video/f-music-video.component';
+import { GTeamComponent } from './views/on-boarding/join-us/g-team/g-team.component';
+import { HZionComponent } from './views/on-boarding/join-us/h-zion/h-zion.component';
+import { IWhitePaperComponent } from './views/on-boarding/join-us/i-white-paper/i-white-paper.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +35,15 @@ import { MatMenuModule } from '@angular/material/menu';
     HomeComponent,
     MainSearchBarComponent,
     MainNavBarComponent,
+    ALetsBuildComponent,
+    BImagineEarlyAccessComponent,
+    CNewsfeedDiscoverComponent,
+    DMessengerComponent,
+    EProfileComponent,
+    FMusicVideoComponent,
+    GTeamComponent,
+    HZionComponent,
+    IWhitePaperComponent
   ],
   imports: [
     RootStoreModule,
