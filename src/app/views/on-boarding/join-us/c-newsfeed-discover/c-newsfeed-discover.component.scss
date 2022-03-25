@@ -1,3 +1,7 @@
+.newsfeed-discover {
+  margin-top: 3em;
+}
+
 .descript span {
   font-weight: 400;
 }
@@ -39,4 +43,67 @@
 .phone-active {
   transition: all 1s;
   opacity: 1;
+}
+
+// Responsive
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .container-img {
+    .bi-arrow-left-circle {
+      position: absolute;
+      top: 8em;
+      left: 0;
+    }
+
+    .bi-arrow-right-circle {
+      position: absolute;
+      top: 8em;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container-img {
+    .bi-arrow-left-circle {
+      position: absolute;
+      top: 8em;
+      left: 0;
+    }
+
+    .bi-arrow-right-circle {
+      position: absolute;
+      bottom: 8em;
+      right: 0;
+    }
+  }
+}
+
+// Default Position Animation (left)
+.slide-component .left-slide {
+  position: relative;
+  transform: translateX(-50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Left Side - Scroll Event)
+.animation_component .slide-component .left-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+// Default Position Animation (right)
+.slide-component .right-slide {
+  position: relative;
+  transform: translateX(50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Right Side - Scroll Event)
+.animation_component .slide-component .right-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
 }

@@ -1,23 +1,20 @@
-    <!-- Let's Build the future -->
-    <div class="col-12 d-flex justify-content-between">
-        <div class="col-12 col-md-6 d-flex align-items-center">
-  
+    <!-- New's Feed & Discover -->
+    <div [class.animation_component]="slide_change">
+      <div class="col-12 d-flex flex-column flex-lg-row justify-content-between px-5 newsfeed-discover slide-component" id="{{ecosystemId}}">
+        <div class="col-12 col-lg-6 d-flex align-items-center left-slide">
           <div class="container-fluid descript">
     
             <!-- Description -->
             <div class="row mx-0 mt-5 mt-lg-0">
-              <span class="display-3 text-light col-12 text-center text-md-start">
-                <strong>New's Feed &<br /> Discover</strong>
+              <span class="display-3 text-light col-12 text-center text-lg-start">
+                <strong>{{'LANDING_PAGE.c-news-feed-disover.title' | translate}}</strong>
               </span>
-              <p class="text-light col-12 py-3 mt-3 text-center text-md-start">This feature highlighs the latest trends
-                ans hastags from the community. It,s also a great wway to increase your visibility. As creator of all
-                kinds of content, you should know that in order to open people,s eyes, they must know that you exist.</p>
+              <p class="text-light col-12 py-3 mt-3 text-center text-lg-start">{{'LANDING_PAGE.c-news-feed-disover.text' | translate}}</p>
             </div>
     
           </div>
-    
         </div>
-        <div class="container-img d-flex col-12 col-md-5 mt-5 mb-lg-5 pb-lg-5">
+        <div class="container-img d-flex col-12 col-lg-6 mt-5 mb-lg-5 pb-lg-5 right-slide">
             <svg xmlns="http://www.w3.org/2000/svg" 
             (click)="onPrevious()" 
             [ngClass]="default == 'previous' ? 'color-inactive' : 'text-white'"
@@ -50,3 +47,4 @@
           </div>
         </div>
       </div>
+    </div>
