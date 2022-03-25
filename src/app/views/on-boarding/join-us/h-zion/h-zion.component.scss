@@ -1,4 +1,3 @@
-// Zion
 .zion {
   margin-top: 10em;
 }
@@ -88,4 +87,34 @@
 
 .descript button:hover {
   outline: 2px solid #fff;
+}
+
+// Default Position Animation (left)
+.slide-component .left-slide {
+  position: relative;
+  transform: translateX(-50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Left Side - Scroll Event)
+.animation_component .slide-component .left-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+// Default Position Animation (right)
+.slide-component .right-slide {
+  position: relative;
+  transform: translateX(50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Right Side - Scroll Event)
+.animation_component .slide-component .right-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
 }
