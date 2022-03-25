@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MessengerAnimation } from 'src/app/core/animation/on-boarding-animation/on-boarding.animation';
 
 @Component({
@@ -8,10 +8,19 @@ import { MessengerAnimation } from 'src/app/core/animation/on-boarding-animation
   animations: [MessengerAnimation]
 })
 export class DMessengerComponent implements OnInit {
+  slide_change: boolean = false;
   default: string = 'previous';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener("document:scroll")
+  scrollfunction() {
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop > 2650 || document.documentElement.scrollTop > 2650) {
+      this.slide_change = true;
+    }
   }
 
   onPrevious() {
