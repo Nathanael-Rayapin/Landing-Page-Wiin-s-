@@ -1,22 +1,22 @@
-    <!-- Let's Build the future -->
-    <div class="col-12 d-flex justify-content-between">
-        <div class="col-12 col-md-6 d-flex align-items-center">
+    <!-- Music & Video -->
+    <div [class.animation_component]="slide_change">
+      <div class="col-12 d-flex flex-column flex-lg-row justify-content-between px-5 music-video slide-component">
+        <div class="col-12 col-lg-6 d-flex align-items-center left-slide">
   
           <div class="container-fluid descript">
     
             <!-- Description -->
             <div class="row mx-0 mt-5 mt-lg-0">
-              <span class="display-3 text-light col-12 text-center text-md-start">
-                <strong>Music &<br /> Video</strong>
+              <span class="display-3 text-light col-12 text-center text-lg-start">
+                <strong>{{'LANDING_PAGE.f-music-video.title' | translate}}</strong>
               </span>
-              <p class="text-light col-12 py-3 mt-3 text-center text-md-start">Post your audio content (music, podcasts ...)
-                in exchange for a fee if respect of the CGU and if certified.</p>
+              <p class="text-light col-12 py-3 mt-3 text-center text-lg-start">{{'LANDING_PAGE.f-music-video.text' | translate}}</p>
             </div>
     
           </div>
     
         </div>
-        <div class="container-img d-flex col-12 col-md-5 mt-5 mb-lg-5 pb-lg-5">
+        <div class="container-img d-flex col-12 col-lg-6 mt-5 mb-lg-5 pb-lg-5 right-slide">
             <svg xmlns="http://www.w3.org/2000/svg" 
             (click)="onPrevious()" 
             [ngClass]="count === 0 ? 'color-inactive' : 'text-white'"
@@ -57,3 +57,5 @@
           </div>
         </div>
       </div>
+    </div>
+    

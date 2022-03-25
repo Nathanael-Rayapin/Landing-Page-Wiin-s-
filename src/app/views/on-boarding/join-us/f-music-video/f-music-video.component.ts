@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MusicVideoAnimation } from 'src/app/core/animation/on-boarding-animation/on-boarding.animation';
 
 @Component({
@@ -8,11 +8,20 @@ import { MusicVideoAnimation } from 'src/app/core/animation/on-boarding-animatio
   animations: [MusicVideoAnimation]
 })
 export class FMusicVideoComponent implements OnInit {
+  slide_change: boolean = false;
   default: string = 'default';
   count: number = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener("document:scroll")
+  scrollfunction() {
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop > 4400 || document.documentElement.scrollTop > 4400) {
+      this.slide_change = true;
+    }
   }
 
   onPrevious() {
