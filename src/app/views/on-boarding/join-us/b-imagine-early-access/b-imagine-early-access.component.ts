@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-b-imagine-early-access',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./b-imagine-early-access.component.scss']
 })
 export class BImagineEarlyAccessComponent implements OnInit {
-
+  slide_change: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener("document:scroll")
+  scrollfunction() {
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      this.slide_change = true;
+    }
   }
 
 }
