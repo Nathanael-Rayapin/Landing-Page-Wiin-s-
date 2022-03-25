@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-i-white-paper',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./i-white-paper.component.scss']
 })
 export class IWhitePaperComponent implements OnInit {
+  slide_change: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  @HostListener("document:scroll")
+  scrollfunction() {
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop > 7400 || document.documentElement.scrollTop > 7400) {
+      this.slide_change = true;
+    }
+  }
 }
