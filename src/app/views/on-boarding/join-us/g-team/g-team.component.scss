@@ -24,7 +24,48 @@
   font-size: 19px;
 }
 
+.ceo .avatar img,
+.manager .avatar img,
 .developper .avatar img {
-  width: 200px;
-  height: 201px;
+  width: 140px;
+  height: 141px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .ceo .avatar img,
+  .manager .avatar img,
+  .developper .avatar img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+// Default Position Animation (left)
+.slide-component .left-slide {
+  position: relative;
+  transform: translateX(-50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Left Side - Scroll Event)
+.animation_component .slide-component .left-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+// Default Position Animation (right)
+.slide-component .right-slide {
+  position: relative;
+  transform: translateX(50em);
+  opacity: 0;
+  transition: all 1s;
+}
+
+// Next Position Animation (Right Side - Scroll Event)
+.animation_component .slide-component .right-slide {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
 }
