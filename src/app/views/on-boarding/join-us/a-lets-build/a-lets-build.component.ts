@@ -8,9 +8,8 @@ import { AuthService } from 'src/app/core/service/auth/auth.service';
 })
 export class ALetsBuildComponent implements OnInit {
 
-  constructor(public authService: AuthService) { }
+  constructor(
+    public authService: AuthService) { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }

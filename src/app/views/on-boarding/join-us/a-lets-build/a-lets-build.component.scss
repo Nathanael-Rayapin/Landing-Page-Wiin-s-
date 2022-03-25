@@ -1,3 +1,7 @@
+.build {
+  margin-top: 8em;
+}
+
 .btn-action {
   background: linear-gradient(90deg, #345aa4, rgba(63, 0, 156, 0.92));
   border-radius: 13px;
@@ -8,8 +12,8 @@
   font-weight: 400;
 }
 
-.descript h4 {
-  font-size: 37px;
+.descript p {
+  font-size: 24px;
 }
 
 .descript button {
