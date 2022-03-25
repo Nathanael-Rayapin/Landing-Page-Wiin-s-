@@ -25,6 +25,12 @@ import { FMusicVideoComponent } from './views/on-boarding/join-us/f-music-video/
 import { GTeamComponent } from './views/on-boarding/join-us/g-team/g-team.component';
 import { HZionComponent } from './views/on-boarding/join-us/h-zion/h-zion.component';
 import { IWhitePaperComponent } from './views/on-boarding/join-us/i-white-paper/i-white-paper.component';
+import { JContactComponent } from './views/on-boarding/join-us/j-contact/j-contact.component';
+import { TextContactComponent } from './views/on-boarding/join-us/j-contact/text-contact/text-contact.component';
+import { CardsContactComponent } from './views/on-boarding/join-us/j-contact/cards-contact/cards-contact.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -43,13 +49,24 @@ import { IWhitePaperComponent } from './views/on-boarding/join-us/i-white-paper/
     FMusicVideoComponent,
     GTeamComponent,
     HZionComponent,
-    IWhitePaperComponent
+    IWhitePaperComponent,
+    JContactComponent,
+    TextContactComponent,
+    CardsContactComponent
   ],
   imports: [
     RootStoreModule,
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     StoreModule.forRoot({}, {}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
@@ -62,3 +79,7 @@ import { IWhitePaperComponent } from './views/on-boarding/join-us/i-white-paper/
   bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
