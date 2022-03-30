@@ -12,6 +12,11 @@ export class BImagineEarlyAccessComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  goToGooglePlay(): Window | null {
+    return window.open('https://play.google.com/store/apps/details?id=com.wiins&hl=fr&gl=US', '_blank');
+  }
+
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);
