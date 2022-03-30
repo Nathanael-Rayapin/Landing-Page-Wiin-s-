@@ -1,3 +1,11 @@
+// Navbar
+nav {
+  background: linear-gradient(90deg, #58aed2, #4a85d1, #8965c3);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  z-index: 999;
+}
+
 // Brand
 .brand-icon-img {
   width: 65px;
@@ -88,16 +96,6 @@
   background-color: #fff;
 }
 
-// Responsive [Text]
-// @media screen and (min-width: 992px) and (max-width: 1200px) {
-//   .container-nav-btn {
-//     button span {
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 14px;
-//       line-height: 35px;
-//       transition: all 0.2s;
-//       color: #ebebeb;
-//     }
-//   }
-// }
+.cursor-not-allow {
+  cursor: not-allowed;
+}

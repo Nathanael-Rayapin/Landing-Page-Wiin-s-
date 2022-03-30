@@ -1,7 +1,7 @@
-<div class="container-fluid bg-container">
+<div class="container-fluid bg-container p-0 overflow-hidden">
 
   <!-- Navbar -->
-  <nav class="row p-4 align-items-center ">
+  <nav class="row p-2 align-items-center position-fixed w-100 m-0">
 
     <!-- Brand -->
     <div class="col-10 col-xl-3 my-auto">
@@ -14,12 +14,12 @@
     </div>
 
     <!-- Button List -->
-    <div class="col-12 col-xl-9 d-none d-xl-flex row my-auto">
+    <div class="col-xl-9 d-none d-xl-flex row my-auto">
       <div class="d-flex justify-content-end align-items-baseline container-nav-btn">
         <!-- Button -->
-        <button class="btn btn-sm text-light"
+        <button class="btn btn-sm text-light" (click)="onNavigateTo(item.fragment)"
           *ngFor="let item of btnTabs">
-            <span>{{item.name}}</span>
+            <span>{{item.title | translate}}</span>
         </button>
         <!-- Button [Externe] -->
         <button class="btn btn-sm mx-2 me-5 text-light" (click)="goToGitHub()">
@@ -32,13 +32,14 @@
           <span>{{defaultLang}} <i class="bi bi-arrow-down"></i></span>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item *ngFor="let item of filteredLang ? filteredLang : btnLanguages; let i = index">
-            <span (click)="onChangeLang(item.language)">{{item.language}}</span>
+          <button mat-menu-item *ngFor="let item of filteredLang ? filteredLang : btnLanguages; let i = index" (click)="onChangeLang(item)"
+          [ngClass]="{'cursor-not-allow': item.available === 'not-available'}">
+            <span>{{item.language}}</span>
           </button>
         </mat-menu>
         <!-- <div class="container-nav-btn"> -->
         <button class="btn btn-sm mx-2 text-light signIn-btn px-4" (click)="authService.login()">
-          <span>SignIn</span>
+          <span>{{'LANDING_PAGE.on-boarding.sign-in' | translate}}</span>
         </button>
         <!-- </div> -->
       </div>
@@ -59,9 +60,8 @@
 
   </nav>
 
-
   <!-- Router container -->
-  <div class="container min-vh-100">
+  <div class="container-fluid min-vh-100 p-0 m-0">
     <router-outlet></router-outlet>
   </div>
 
