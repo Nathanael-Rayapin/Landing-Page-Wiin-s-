@@ -9,8 +9,7 @@ import { TraductionService } from './core/service/translate/translate.service';
 export class AppComponent implements OnInit {
   title = 'WiinsWebDapp';
 
-  constructor(
-    public translate: TraductionService) { }
+  constructor(public translate: TraductionService) { }
 
   ngOnInit(): void {
     this.translate.setDefaultLang();
