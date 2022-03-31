@@ -2,27 +2,27 @@
   "LANDING_PAGE": {
     "a-lets-build-future": {
       "title": "Let's build the future together",
-      "text": "Wiin's wants to centralize in an intuitive way the sharing, the communication, the entertainment and the help to the greatest number of people while respecting the rights of the users.",
+      "text": "Wiin's wants to centralize in an intuitive way by sharing, communication, entertainment and to help as many people as possible while respecting the rights of the users.",
       "button-join-us": "Join us"
     },
     "b-imagine-early-access": {
       "title": "Imagine an infinite space",
-      "text": "A space accessible with a single account, a single password, a single wallet. An intuitive space, without intrusive ads, where image, video, text and audio content can be found side by side and where content creators will benefit from a new remuneration system."
+      "text": "A space accessible with a single account, a single password and single wallet. An intuitive space, without intrusive ads, where photos, videos, messaging and audio content can be found all in one and where content creators will benefit from a new remuneration system."
     },
     "c-news-feed-disover": {
-      "text": "This feature highlights the latest trends from your friends and the community. The platform does not sell advertising space and in this philosophy it does not have to make you dependent. For example, the number of \"likes\" is not indicated to limit the aspect of rewards.",
+      "text": "This feature highlights the latest trends from your friends and the community. The platform does not sell advertising space and our philosophy does not make you dependent. For example, the concept of \"likes\" does not exist.",
       "title": "News Feed & Discovery"
     },
     "d-messenger": {
-      "text": "Chat with your friends and create interest groups by sharing content in different formats such as video, audio, image and text. Messages are ephemeral and disappear after two weeks to improve your data protection. In addition, your discussions can be divided, depending on your priorities. Messages are deleted, the links you have created remain.",
+      "text": "Chat with your friends and create interest groups by sharing content in different formats such as videos, audios, photos and messages. Messages are impermanent and expire after two weeks to improve data protection. In addition, messages can be separated in group chat, depending on your priorities.\nMessages are deleted, the links you have created remain",
       "title": "Messaging"
     },
     "e-profil": {
-      "text": "Enhancing your profile means publishing content and communicating about your interests in several formats (image, video, audio, front page story). You can also decide to make your profile private in order to keep intimate social relationships with your loved ones. For artists of all kinds, highlight your creativity, whether it is visual art, literature, music, video or other. ",
+      "text": "Enhancing your profile means publishing content and communicating your interests in several formats (image, video, audio, front page story). You can also decide to put your profile in private in order to keep intimate social relationships with your close ones. For artists of all kinds, Wiin's is the space to highlight your creativity, whether it is visual art, literature, musics, videos or others. ",
       "title": "Profile"
     },
     "f-music-video": {
-      "text": "Listen to and watch audio and video content while sending power to your certified content creators with a brand new payout system based on your actual listens and monetary gifts. Quickly switch between formats and enjoy content no matter which tab you're on.",
+      "text": "Audio and video contents are rewarded based on the listening and wathing time with a brand new payout system viewer monetary gifts. Simply switch between content types and enjoy creating on Wiin's.",
       "title": "Music & Video"
     },
     "g-team": {
@@ -34,7 +34,7 @@
       "title": "Team"
     },
     "h-zion": {
-      "text": "Thanks to this cryptocurrency, for the moment, you will be able to stake. Later on, you will be able to use the platform 100% with the content of the artists, etc. Through the acquisition of a subscription. You will also be able to make monetary gifts to Wiin's certified artists. Today Zion is starting and thanks to you it will be worth how much tomorrow ?",
+      "text": "Thanks to cryptocurrency, you will be able to stake and earn Zion at the same time. You also be able to use 100% of the platform with full content available to a subscription. Wiin's certified Artist can be rewarded with monetary gifts. Join the Wiin's communtiy today and lets grow Zion's worth together ",
       "title": "Zion",
       "button-buy-zion": "Buy Zion"
     },
@@ -42,7 +42,7 @@
       "title": "White Paper"
     },
     "j-more-we-are": {
-      "text": "Follow our updates on our various networks and participate in the project design through our Discord and GitHub.",
+      "text": "Follow our updates on our various networks and participate in the project design through our Discord and GitHub",
       "title": "Join us"
     },
     "on-boarding": {
