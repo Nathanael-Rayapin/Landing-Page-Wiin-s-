@@ -1,13 +1,23 @@
+// Imagine an Infinite Space
 .early-access {
   margin-top: 3em;
 }
 
-.descript span {
-  font-weight: 400;
+// Description
+.descript  {
+  span {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 24px;
+  }
 }
 
-.descript p {
-  font-size: 24px;
+// Button
+.appBtn {
+  position: relative;
+  left: -0.5rem;
 }
 
 .btn-action {
@@ -20,11 +30,12 @@
   }
 }
 
-.appBtn {
+.btn-action.appStore {
   position: relative;
-  left: -0.5rem;
+  bottom: .2rem
 }
 
+// Responsive
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .btn-action:nth-of-type(2) {
     position: relative;
