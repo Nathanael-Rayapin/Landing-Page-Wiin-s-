@@ -68,9 +68,16 @@ nav {
 }
 
 // Menu Hamburger
-.dropdown button {
-  background: transparent;
-  border: none;
+.dropdown  {
+
+  button {
+    background: transparent;
+    border: none;
+  }
+
+  ul li a {
+    cursor: pointer;
+  }
 }
 
 .dropdown-toggle::after {
