@@ -1,16 +1,21 @@
+// Messenger
 .messenger {
   margin-top: 3em;
 }
 
-.descript span {
-  font-weight: 400;
+// Description
+.descript {
+  span {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
 }
 
-.descript p {
-  font-size: 24px;
-}
-
-// Animation
+// Phone Image (animation)
 .container-img {
   position: relative;
   z-index: 1;
@@ -40,6 +45,7 @@
   transition: all 1s;
   opacity: 0.03;
 }
+
 .phone-active {
   transition: all 1s;
   opacity: 1;
