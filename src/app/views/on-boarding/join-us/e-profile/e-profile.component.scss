@@ -1,16 +1,22 @@
+// Profile
 .profile {
   margin-top: 3em;
 }
 
-.descript span {
-  font-weight: 400;
+// Description
+.descript {
+
+  span {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
 }
 
-.descript p {
-  font-size: 24px;
-}
-
-// Animation
+// Phone Image
 .container-img {
   position: relative;
   z-index: 1;

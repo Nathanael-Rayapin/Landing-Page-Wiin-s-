@@ -8,6 +8,7 @@ import { MessengerAnimation } from 'src/app/core/animation/on-boarding-animation
   animations: [MessengerAnimation]
 })
 export class DMessengerComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
   default: string = 'previous';
   constructor() { }
@@ -15,6 +16,7 @@ export class DMessengerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);
@@ -23,12 +25,14 @@ export class DMessengerComponent implements OnInit {
     }
   }
 
+  // Previous Phone Image
   onPrevious() {
     if (this.default === 'next') {
       this.default = 'previous';
     }
   }
 
+  // Next Phone Image
   onNext() {
     if (this.default === 'previous') {
       this.default = 'next';

@@ -1,16 +1,22 @@
+// White Paper
 .white-paper {
   margin-top: 10em;
 }
 
-.descript span {
-  font-weight: 400;
+// Description
+.descript  {
+
+  span {
+    font-weight: 400;
+  }
+
+  ul li {
+    font-size: 24px;
+  }
+
 }
 
-.descript ul li {
-  font-size: 24px;
-}
-
-// Animation
+// Phone Image
 .container-img {
   position: relative;
   z-index: 1;

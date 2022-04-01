@@ -1,16 +1,22 @@
+// Team
 .team {
   margin-top: 10em;
 }
 
-.descript span {
-  font-weight: 400;
+// Collaborator
+.descript {
+
+  span {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
 }
 
-.descript p {
-  font-size: 24px;
-}
-
-// Team
+// Founder
 .ceo h4,
 .manager h4,
 .developper h4 {
@@ -31,6 +37,7 @@
   height: 141px;
 }
 
+// Responsive
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .ceo .avatar img,
   .manager .avatar img,

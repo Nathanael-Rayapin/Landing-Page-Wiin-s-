@@ -1,14 +1,20 @@
+// Contact Us
 .contact-us {
   margin-top: 10em;
 }
 
-.lists-social {
+// Social Lists
+.social-lists {
   height: 110px;
   background-color: rgba(0, 0, 0, 0.1);
 
   ul li {
     list-style: none;
     cursor: pointer;
+  }
+
+  ul li:not(:last-of-type) {
+    margin-right: 3em;
   }
 }
 

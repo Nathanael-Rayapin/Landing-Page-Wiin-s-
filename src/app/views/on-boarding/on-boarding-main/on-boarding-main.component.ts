@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/service/auth/auth.service';
 import { FragmentService } from 'src/app/core/service/fragment/fragment.service';
 import { TraductionService } from 'src/app/core/service/translate/translate.service';

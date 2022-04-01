@@ -9,7 +9,10 @@ import { FragmentService } from 'src/app/core/service/fragment/fragment.service'
   styleUrls: ['./h-zion.component.scss']
 })
 export class HZionComponent implements OnInit, OnDestroy {
+  // Slide Animation
   slide_change: boolean = false;
+
+  // Anchor
   tokenSubs: Subscription;
   tokenId: string = '';
 
@@ -32,6 +35,7 @@ export class HZionComponent implements OnInit, OnDestroy {
     );
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);

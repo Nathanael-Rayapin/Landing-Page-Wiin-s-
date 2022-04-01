@@ -11,11 +11,13 @@ import { FragmentService } from 'src/app/core/service/fragment/fragment.service'
   animations: [NewsFeedAnimation]
 })
 export class CNewsfeedDiscoverComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
+
+  // Anchor
   ecosystemSubs: Subscription;
   ecosystemId: string = '';
 
-  tokenId: string = '';
   default: string = 'previous';
 
   constructor(
@@ -38,6 +40,7 @@ export class CNewsfeedDiscoverComponent implements OnInit {
     );
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);
@@ -46,12 +49,14 @@ export class CNewsfeedDiscoverComponent implements OnInit {
     }
   }
 
+  // Previous Phone Image
   onPrevious() {
     if (this.default === 'next') {
       this.default = 'previous';
     }
   }
 
+  // Next Phone Image
   onNext() {
     if (this.default === 'previous') {
       this.default = 'next';

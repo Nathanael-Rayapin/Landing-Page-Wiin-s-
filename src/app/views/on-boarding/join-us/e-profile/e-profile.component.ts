@@ -6,12 +6,15 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./e-profile.component.scss']
 })
 export class EProfileComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);

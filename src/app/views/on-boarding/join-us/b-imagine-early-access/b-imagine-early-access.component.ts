@@ -6,17 +6,18 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./b-imagine-early-access.component.scss']
 })
 export class BImagineEarlyAccessComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
   goToGooglePlay(): Window | null {
     return window.open('https://play.google.com/store/apps/details?id=com.wiins&hl=fr&gl=US', '_blank');
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);

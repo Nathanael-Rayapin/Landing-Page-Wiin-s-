@@ -9,7 +9,10 @@ import { FragmentService } from 'src/app/core/service/fragment/fragment.service'
   styleUrls: ['./g-team.component.scss']
 })
 export class GTeamComponent implements OnInit, OnDestroy {
+  // Slide Animation
   slide_change: boolean = false;
+
+  // Anchor
   teamSubs: Subscription;
   teamId: string = '';
 
@@ -33,6 +36,7 @@ export class GTeamComponent implements OnInit, OnDestroy {
     );
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);

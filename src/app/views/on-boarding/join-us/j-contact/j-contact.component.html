@@ -9,13 +9,10 @@
             <app-cards-contact></app-cards-contact>
         </div>
     </div>
-    <div class="lists-social w-100 my-5">
+    <!-- Social Lists -->
+    <div class="social-lists w-100 my-5">
         <ul class="d-flex justify-content-center justify-content-lg-start align-items-center h-100 px-5">
-            <li class="me-5"><img src="../../../../../assets/img/Icon/Facebook.svg" alt="Facebook"></li>
-            <li class="me-5"><img src="../../../../../assets/img/Icon/Instagram.svg" alt="Instagram"></li>
-            <li class="me-5"><img src="../../../../../assets/img/Icon/Linkedin.svg" alt="Linkedin"></li>
-            <li class="me-5"><img src="../../../../../assets/img/Icon/Twitter.svg" alt="Twitter"></li>
-            <li><img src="../../../../../assets/img/Icon/Github.svg" alt="Github"></li>
+            <li *ngFor="let social of socialLists" (click)="goToSocial(social.path)"><img [src]="social.src" [alt]="social.name"></li>
         </ul>
     </div>
 </div>

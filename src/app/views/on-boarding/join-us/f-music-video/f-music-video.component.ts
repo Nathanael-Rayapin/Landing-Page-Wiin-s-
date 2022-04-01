@@ -8,14 +8,19 @@ import { MusicVideoAnimation } from 'src/app/core/animation/on-boarding-animatio
   animations: [MusicVideoAnimation]
 })
 export class FMusicVideoComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
+
+  // Slide Phone Image Animation
   default: string = 'default';
   count: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);
@@ -24,6 +29,7 @@ export class FMusicVideoComponent implements OnInit {
     }
   }
 
+  // Previous Phone Image
   onPrevious() {
     if (this.count === 0) {
       return;
@@ -40,6 +46,7 @@ export class FMusicVideoComponent implements OnInit {
     }
   }
 
+  // Next Phone Image
   onNext() {
     if (this.count === 3) {
       return;

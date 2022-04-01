@@ -9,6 +9,7 @@ export class CardsContactComponent implements OnInit {
 
   constructor() { }
 
+  // To dev page
   devs: wiinsweb[] = [
     { avatar: '../../../../../../assets/img/j-contact/devs/raphael.jfif', name: 'Raphaël', path: 'https://github.com/etsraphael' },
     { avatar: '../../../../../../assets/img/j-contact/devs/nathanael.jpg', name: 'Nathanaël', path: 'https://github.com/Nathanael421' },

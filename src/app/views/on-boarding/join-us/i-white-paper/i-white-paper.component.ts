@@ -6,6 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./i-white-paper.component.scss']
 })
 export class IWhitePaperComponent implements OnInit {
+  // Slide Animation
   slide_change: boolean = false;
 
   constructor() { }
@@ -13,6 +14,7 @@ export class IWhitePaperComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Component appear when the Scroll is at 
   @HostListener("document:scroll")
   scrollfunction() {
     console.log(document.body.scrollTop);
